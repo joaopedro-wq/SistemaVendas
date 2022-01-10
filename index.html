@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Online</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    
+      <h1>Pizza Online</h1>
+    
+  </header>
+
+  <section>
+    <form >
+      <h3>Selecione a pizza desejada:</h3>
+      <ul>
+        <li><input type="radio" id="banana" name="pizzas"><label for="banana">Banana</label></li>
+        <li><input type="radio" id="calabresa" name="pizzas"><label for="calabresa">Calabresa</label></li>
+        <li><input type="radio" id="atum" name="pizzas"><label for="atum">Atum</label></li>
+        <li><input type="radio" id="portuguesa" name="pizzas"><label for="portuguesa">Portuguesa</label></li>
+      </ul>
+
+    </form>
+</section>
+
+<Section>
+  <button id="vendas">Adicionar</button><button id="estorno">Estorno</button>
+</Section>
+
+<SEction id="table">
+  <table>
+  <tr>
+    <th>Sabores</th><th>Quantidade</th><th>Valores</th>
+  </tr>
+  <tr>
+    <td>Banana</td><td id="resultBanana"></td><td id="vendaBanana"></td>
+  </tr>
+  <tr>
+    <td>Calabresa</td><td id="resultCalabresa"></td><td id="vendaCalabresa"></td>
+  </tr>
+  <tr>
+    <td>Atum</td><td id="resultAtum"></td><td id="vendaAtum"></td>
+  </tr>
+  <tr>
+    <td>Portuguesa</td><td id="resultPortuguesa"></td><td id="vendaPortuguesa"></td>
+
+  </tr>
+
+  </table>
+
+</SEction>
+
+<section>
+  <button id="export">Planilha</button>
+</section>
+
+
+  <script src="tableToExcel.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
